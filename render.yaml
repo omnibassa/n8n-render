@@ -15,7 +15,7 @@ services:
           property: host
       - key: PGDATABASE
         fromDatabase:
-          name: n8nDB
+          name: n8nMainDB
           property: database
       - key: PGPORT
         fromDatabase:
@@ -35,6 +35,6 @@ services:
       sizeGB: 10
 
 databases:
-  - name: n8nDB
+  - name: n8nMainDB
     region: frankfurt
     plan: starter
