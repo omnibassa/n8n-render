@@ -11,7 +11,7 @@ services:
     envVars:
       - key: PGHOST
         fromDatabase:
-          name: n8nDB
+          name: n8nMainDB
           property: host
       - key: PGDATABASE
         fromDatabase:
@@ -19,15 +19,15 @@ services:
           property: database
       - key: PGPORT
         fromDatabase:
-          name: n8nDB
+          name: n8nMainDB
           property: port
       - key: PGUSER
         fromDatabase:
-          name: n8nDB
+          name: n8nMainDB
           property: user
       - key: PGPASSWORD
         fromDatabase:
-          name: n8nDB
+          name: n8nMainDB
           property: password
     disk:
       name: n8nDisk
